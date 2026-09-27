@@ -18,6 +18,10 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - Evidence already gathered. Route to `netflix-research`.
 - No access to the builders and no notes. Say so.
 
+## Ask first
+
+- This skill is the questions. Confirm who I am interviewing (name, role) and whether notes or a live conversation, then run the script.
+
 ## Instructions
 
 Most Netflix posts read like told stories because they start as told stories. Run the interview, then convert.

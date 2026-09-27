@@ -18,6 +18,10 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - User named a specific skill already (topics, titles, review). Let that skill run.
 - The task is not technical blog writing.
 
+## Ask first
+
+- What is the topic or draft, and where in the pipeline are we (idea, outline, draft, published)? At most 3 questions, then chain.
+
 ## Instructions
 
 Interview for at most 3 answers, then chain. Default chain for a new post:

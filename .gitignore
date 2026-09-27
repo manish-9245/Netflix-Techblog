@@ -1,10 +1,8 @@
-# generated corpus — GBs of markdown + images, rebuild via scripts/run_all.sh
+# local training corpus (large, regenerable, not for distribution)
 train/
-# cdx month cache is regenerable noise
-# (kept out even if train/ignore rules change)
 __pycache__/
 *.pyc
-.nohup.out
 nohup.out
 .DS_Store
 scripts-local/
+data/
