@@ -1,0 +1,9 @@
+{
+  "name": "write-like-netflix",
+  "description": "AI skills that teach assistants to write engineering blogs like Netflix, trained on 800+ Netflix TechBlog posts.",
+  "version": "0.1.0",
+  "author": {
+    "name": "manish-9245"
+  },
+  "license": "MIT"
+}
