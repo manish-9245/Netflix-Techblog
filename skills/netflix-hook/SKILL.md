@@ -18,6 +18,10 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - The opening already scores well. Do not rewrite working hooks.
 - Non-technical or non-Netflix-style content.
 
+## Ask first
+
+- Offer the top 2 fitting archetypes with one-line samples, ask the user to pick. Default to the higher-frequency archetype on no answer.
+
 ## Instructions
 
 Pick the archetype that fits the material, using measured frequencies as priors. Write 100 to 150 words, then state the archetype and why it fits. Never stack two archetypes.
