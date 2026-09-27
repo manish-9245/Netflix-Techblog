@@ -1,6 +1,8 @@
 ---
 name: netflix-hook
 description: Writes the first 150 words of an engineering post in one of 10 Netflix-proven hook archetypes. Use when starting a draft, when the opening is weak, or when the user asks for an intro, hook, or lede.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Hook

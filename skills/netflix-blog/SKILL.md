@@ -1,6 +1,8 @@
 ---
 name: netflix-blog
 description: Routes any Netflix-style engineering blog task to the right specialist skills in the right order. Use when the user wants to write, plan, review, or illustrate a technical blog post in the Netflix TechBlog style, or says write like Netflix.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Blog Router

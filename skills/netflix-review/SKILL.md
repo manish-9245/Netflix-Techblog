@@ -1,6 +1,8 @@
 ---
 name: netflix-review
 description: Scores an engineering blog draft against the quantified Netflix TechBlog rubric (structure, evidence, figures, title, hook, voice) and returns fixes. Use when a draft exists and the user wants a Netflix-editor review, a score, or to know what is missing before publishing.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Reviewer
@@ -19,7 +21,7 @@ description: Scores an engineering blog draft against the quantified Netflix Tec
 
 Score the draft 0 to 10 on each axis using the gates below, trained on 388 Netflix TechBlog posts. Report a table plus the top 5 fixes ordered by score impact. Pass mark: no axis below 6, total at least 48/70.
 
-1. **Structure (10):** Median post is 1,614 words (p10 549, p90 2,801). Expect: problem or context opening, 2+ H2 sections, architecture or approach section, results or evaluation, closing section (Conclusion, Summary, Next steps, or What is next appear in most posts). Deduct for missing results, missing closing, or single-section walls of text.
+1. **Structure (10):** Median post is 1,614 words (p10 549, p90 2,801). Expect: problem or context opening, 2+ H2 sections, architecture or approach section, results or evaluation, closing section (Conclusion, Summary, Next steps, or What is next appear in most posts). Posts under 800 words can pass if all density gates hold (compact mode). Deduct for missing results, missing closing, or single-section walls of text.
 2. **Evidence density (10):** Median 29 numbers and 7 links per 1,000 words. Every performance or scale claim needs a number; every external fact needs a link. Flag unsupported quantitative claims as failures, not warnings.
 3. **Figures (10):** 84% of posts are illustrated, median 3 figures at 2.1 per 1,000 words. First figure should land within roughly the first 300 words. Zero figures in a post over 1,000 words caps this axis at 4. Call `netflix-visuals` for the fix list.
 4. **Title (10):** Median 58 characters; 76% contain Netflix or the system name. Title must name the system and the payoff. Vague titles ("Some thoughts on pipelines") fail.

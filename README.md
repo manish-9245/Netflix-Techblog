@@ -30,19 +30,19 @@ No generic writing advice.
 
 | Skill | What it does |
 |---|---|
-| `netflix-topics` | Finds topics worth writing about, scored the Netflix way |
-| `netflix-titles` | Crafts titles that earn the click |
-| `netflix-series` | Plans multi-part deep dives |
-| `netflix-research` | Turns code, docs, and experiments into evidence |
-| `netflix-interview` | Turns a 30-minute engineer conversation into an outline |
-| `netflix-data-story` | Frames numbers as baseline, intervention, measured delta |
-| `netflix-code` | Picks the minimal snippets that carry the story |
-| `netflix-hook` | Writes 150-word openers in 5 proven archetypes |
-| `netflix-write` | Drafts the full post to per-section budgets |
-| `netflix-visuals` | Places the right figure in the right spot, with captions |
-| `netflix-review` | Scores any draft like a Netflix editor, with fixes |
-| `netflix-factcheck` | Verifies every claim against its source |
-| `netflix-blog` | Router that picks the right skills in the right order |
+| [`netflix-blog`](skills/netflix-blog/SKILL.md) | Router that picks the right skills in the right order |
+| [`netflix-topics`](skills/netflix-topics/SKILL.md) | Finds topics worth writing about, scored the Netflix way |
+| [`netflix-titles`](skills/netflix-titles/SKILL.md) | Crafts titles that earn the click |
+| [`netflix-series`](skills/netflix-series/SKILL.md) | Plans multi-part deep dives |
+| [`netflix-research`](skills/netflix-research/SKILL.md) | Turns code, docs, and experiments into evidence |
+| [`netflix-interview`](skills/netflix-interview/SKILL.md) | Turns a 30-minute engineer conversation into an outline |
+| [`netflix-data-story`](skills/netflix-data-story/SKILL.md) | Frames numbers as baseline, intervention, measured delta |
+| [`netflix-code`](skills/netflix-code/SKILL.md) | Picks the minimal snippets that carry the story |
+| [`netflix-hook`](skills/netflix-hook/SKILL.md) | Writes 150-word openers in 10 proven archetypes |
+| [`netflix-write`](skills/netflix-write/SKILL.md) | Drafts the full post to per-section budgets |
+| [`netflix-visuals`](skills/netflix-visuals/SKILL.md) | Places the right figure in the right spot, with captions |
+| [`netflix-review`](skills/netflix-review/SKILL.md) | Scores any draft like a Netflix editor, with fixes |
+| [`netflix-factcheck`](skills/netflix-factcheck/SKILL.md) | Verifies every claim against its source |
 
 ## The corpus behind it
 
@@ -51,6 +51,15 @@ No generic writing advice.
 - Powers quantitative style profiles covering structure, voice, titles, topics, and visuals
 
 ## Use
+
+Claude Code (one command):
+
+```bash
+/plugin marketplace add manish-9245/Netflix-Techblog
+/plugin install write-like-netflix
+```
+
+Anything else (OpenCode, other skill-compatible assistants):
 
 ```bash
 git clone https://github.com/manish-9245/Netflix-Techblog.git

@@ -1,6 +1,8 @@
 ---
 name: netflix-code
 description: Picks the minimal code snippets that carry a Netflix-style post, with file and line citations. Use when a draft needs code, when snippets feel bloated, or when the user asks what code to show.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Code

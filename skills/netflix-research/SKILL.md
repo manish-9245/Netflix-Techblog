@@ -1,6 +1,8 @@
 ---
 name: netflix-research
 description: Turns a topic into a claim-to-evidence table with sources for every row, the Netflix way. Use when the topic is fixed and the user needs research, evidence gathering, or to know what to measure before drafting.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Researcher

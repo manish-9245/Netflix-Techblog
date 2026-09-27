@@ -1,6 +1,8 @@
 ---
 name: netflix-visuals
 description: Maps figure types, positions, and captions for a Netflix-style post from 7 mined figure archetypes. Use when a draft needs illustrations, when figures feel random, or when the user asks for diagrams, charts, or captions.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Visuals

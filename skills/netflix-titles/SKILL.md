@@ -1,6 +1,8 @@
 ---
 name: netflix-titles
 description: Crafts and scores engineering blog titles against measured Netflix title patterns. Use when a topic needs a title, when there are title options to choose between, or when a working title feels weak.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Titles

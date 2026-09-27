@@ -1,6 +1,8 @@
 ---
 name: netflix-data-story
 description: Frames raw numbers as baseline, intervention, measured delta with a chart spec, the signature Netflix move. Use when there are metrics, experiment results, or benchmarks to present, or when a post's numbers feel flat.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Data Story

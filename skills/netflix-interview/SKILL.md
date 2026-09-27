@@ -1,6 +1,8 @@
 ---
 name: netflix-interview
 description: Turns a 30-minute engineer conversation into a Netflix-style post outline using a mined question script. Use when the knowledge lives in someone's head, for engineer interviews, or when the user has access to the builders.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Interviewer

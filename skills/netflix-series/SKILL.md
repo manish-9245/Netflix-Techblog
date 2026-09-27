@@ -1,6 +1,8 @@
 ---
 name: netflix-series
 description: Splits oversized topics into multi-part Netflix-style series with per-part scope and cross-linking conventions. Use when a topic exceeds one post, when the user mentions Part 2 or a series, or when continuing an earlier post.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Series

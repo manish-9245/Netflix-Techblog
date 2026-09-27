@@ -1,6 +1,8 @@
 ---
 name: netflix-write
 description: Drafts a full Netflix-style engineering post from an outline plus evidence, enforcing per-section budgets for words, figures, and code. Use when the topic and evidence exist and the user wants a complete draft.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Writer
@@ -28,6 +30,10 @@ Build the draft to these budgets, mined from 388 posts (median 1,614 words, rang
 7. **Links:** About 7 per 1,000 words. Link earlier posts in a series, docs for external systems, papers for algorithms.
 
 After drafting, self-score with the `netflix-review` gates and report the score with the draft.
+
+## Compact mode
+
+About 10% of Netflix posts run under 800 words (p10 is 549). For launches, updates, and single-idea posts, scale all budgets to roughly 40%: hook 100 words, one context section, one approach section, one delta paragraph with one figure, closing plus closer. Density gates (numbers, links, figures per 1,000 words) still apply in full. Never pad a compact post to median length.
 
 ## Example
 

@@ -1,6 +1,8 @@
 ---
 name: netflix-topics
 description: Finds and ranks engineering blog topics the Netflix way, mapping a codebase or domain onto the mined Netflix topic taxonomy. Use when the user has a system or domain and asks what to write about, or wants topic ideas.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Topics

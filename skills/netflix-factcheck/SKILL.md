@@ -1,6 +1,8 @@
 ---
 name: netflix-factcheck
 description: Verifies every claim in a Netflix-style draft against its source, returning claim-by-claim verdicts. Use when a draft is complete, before review or publishing, or when the user asks what is verified.
+license: MIT
+metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ---
 
 # Netflix Factchecker
