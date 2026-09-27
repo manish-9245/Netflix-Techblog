@@ -22,7 +22,7 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 
 Pick the archetype that fits the material, using measured frequencies as priors. Write 100 to 150 words, then state the archetype and why it fits. Never stack two archetypes.
 
-1. **Announcement (17%):** For launches and open source. "We are pleased to announce X" plus what it is and who it serves in the first 3 sentences. Corpus proof: Lemur, Zuul 2, Metaflow Step Functions posts open this way, often with a bolded tl;dr line.
+1. **Announcement (17%):** For launches and open source. "We are pleased to announce X" plus what it is and who it serves in the first 3 sentences. Corpus proof: Lemur, Zuul 2, Metaflow Step Functions posts open this way. A bolded tl;dr line is reserved for major launches (under 1% of posts); do not default to it.
 2. **Problem (17%):** For pain-driven work. Name a pain the reader feels ("Change management is hard", "noisy neighbors"), then widen to systems. One concrete symptom before any abstraction.
 3. **Definition (6%):** For unknown systems. "X is a Y that does Z", one sentence, then stakes. Proof: Conductor, GenRec posts.
 4. **Metric (5%):** For scale stories. Open with the biggest honest number (members, petabytes, requests per second), then what it costs or breaks. Proof: "195 million subscribers generate petabytes of data everyday."

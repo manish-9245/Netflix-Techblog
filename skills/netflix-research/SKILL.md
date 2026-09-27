@@ -18,6 +18,11 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - Still choosing topics. Route to `netflix-topics`.
 - Draft already exists. Route to `netflix-factcheck` for verification instead.
 
+## Ask first
+
+- Which repos, dashboards, and docs can I read? (Access decides what is researchable.)
+- Who owns each missing measurement, and by when? Unowned rows become cuts, not hopes.
+
 ## Instructions
 
 Output a claim table. Each row: claim, evidence type, source, status (have it, need it, cannot get). No row ships with "cannot get" on a load-bearing claim.

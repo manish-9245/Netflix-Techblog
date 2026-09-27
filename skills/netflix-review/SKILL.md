@@ -17,6 +17,11 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - No draft exists yet. Route to `netflix-topics` or `netflix-write`.
 - The user wants copy-editing only (grammar, spelling). This skill judges Netflix-fit, not prose mechanics.
 
+## Ask first
+
+- Report-only, or apply the fixes? Default: report with the top 5 fixes, apply on approval.
+- Publish target and date, if any (sets how strict the gate is)?
+
 ## Instructions
 
 Score the draft 0 to 10 on each axis using the gates below, trained on 388 Netflix TechBlog posts. Report a table plus the top 5 fixes ordered by score impact. Pass mark: no axis below 6, total at least 48/70.

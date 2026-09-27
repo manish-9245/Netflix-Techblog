@@ -18,6 +18,11 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - No numbers exist. Route to `netflix-research` for a measurement plan. This skill frames data; it never invents it.
 - The numbers are vanity metrics with no baseline. Say so and stop.
 
+## Ask first
+
+- Paste the numbers or point at the dashboard. Which figure is the baseline, which is the result, over what window?
+- If there are no numbers yet, stop and say so. This skill frames data; it never invents it.
+
 ## Instructions
 
 1. **Baseline first:** What was true before, with window and population. "Data warehouse storage grew unchecked" is nothing; "storage grew 3x in 18 months across 4,000 tables" is a baseline. Corpus proof: Byte Down opens on dozens of platforms and petabytes before any solution appears.

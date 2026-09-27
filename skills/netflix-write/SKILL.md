@@ -17,6 +17,11 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - No evidence yet. Route to `netflix-research` first. Drafts without numbers fail review.
 - User wants only an outline, title, or section. Use the narrower skill.
 
+## Ask first
+
+- Full post (around 1,600 words) or compact (under 800)? Default: infer from material, confirm in one line.
+- Which evidence rows must appear, and which are still missing? Missing load-bearing rows send the user back to `netflix-research`.
+
 ## Instructions
 
 Build the draft to these budgets, mined from 388 posts (median 1,614 words, range 549 to 2,801):
@@ -27,7 +32,7 @@ Build the draft to these budgets, mined from 388 posts (median 1,614 words, rang
 4. **Evaluation (200 to 400 words):** Baseline, intervention, measured delta with at least one concrete number. No delta, no publish.
 5. **Closing (100 to 200 words):** Labeled Conclusion, Summary, Next steps, or What is next. Then the fitting closer: hiring call (24% of posts), future work, thanks, or lessons learned. Never just stop.
 6. **Code:** Only 15% of posts carry code. When used, keep snippets short and annotated (median fence is tiny), Java and config dominate historically. Prefer a figure plus key snippet over a listing.
-7. **Links:** About 7 per 1,000 words. Link earlier posts in a series, docs for external systems, papers for algorithms.
+7. **Links:** About 7 per 1,000 words, roughly 1 in 6 pointing inward to earlier posts. Link predecessors in a series (18% of openers point back), docs for external systems, papers for algorithms.
 
 After drafting, self-score with the `netflix-review` gates and report the score with the draft.
 

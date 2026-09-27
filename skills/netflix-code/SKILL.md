@@ -21,10 +21,15 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 ## Instructions
 
 1. **Select 1 to 3 fragments** that each prove exactly one claim. One fragment per mechanism. If a snippet proves nothing, cut it.
-2. **Keep them short and annotated:** Corpus norm is tiny fenced fragments (median fences are a few lines), historically Java and config. Show the 5 to 15 lines that matter, with a sentence before (what it does) and after (why it matters). Pattern from the corpus: single annotated lines like monitor declarations, each explained in prose.
+2. **Keep them tiny and concrete:** Measured corpus norm is short unlabeled fragments, and content analysis shows JSON output, config blocks, and command output dominate over source listings. Show the 5 to 15 lines that matter (a response payload, a config stanza, a query result), with a sentence before (what it does) and after (why it matters).
 3. **Cite file and lines** on every snippet. Large blocks get replaced by an architecture figure plus the key fragment.
 4. **Commands count as code:** Single deploy or run commands in backticks or fences carry launch posts (proof: "python myflow.py step-functions create" as the payoff line). Give the command, then what the reader gets.
-5. **Explain, never dump:** No uncommented listings, no imports unless the import is the point, no language labels needed when obvious from content.
+5. **Explain, never dump:** No uncommented listings, no imports unless the import is the point.
+
+## Ask first
+
+- Which repo and paths can I read for file and line citations?
+- Snippets from real code, or illustrative fragments with a disclaimer?
 
 ## Example
 

@@ -18,6 +18,11 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - Topic is already fixed. Go to `netflix-titles`.
 - The domain has no production system, no data, and no users. Say so instead of inventing topics.
 
+## Ask first
+
+- Which system, team, or repo should topics come from? (Need read access or a 5-line brief.)
+- Any off-limits topics (stealth work, security-sensitive, already published)?
+
 ## Instructions
 
 1. **Map the domain** onto the mined topic taxonomy (top Netflix tags: data engineering, software engineering, recommendation systems, AI and machine learning, LLMs, autoscaling, stream processing, operational excellence, Flink, backend development, distributed systems, observability). Name the 2 closest Netflix topics and 3 exemplar posts.

@@ -18,6 +18,10 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - Topic is still open. Route to `netflix-topics` first.
 - Non-technical content.
 
+## Ask first
+
+- Present the 5 scored options and ask the user to pick, or to approve the auto-winner. Never ship a title the user has not seen.
+
 ## Instructions
 
 Generate 5 options, score each against the gates below (trained on 388 titles, median 58 characters), and declare one winner with reasons.

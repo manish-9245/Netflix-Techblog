@@ -18,6 +18,11 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - No draft exists. There is nothing to check.
 - As a substitute for research. Missing evidence goes back to `netflix-research`, not around it.
 
+## Ask first
+
+- Where do the draft's numbers come from (links, exports, owners)? Unverifiable numbers fail by default.
+- Fix mode: downgrade soft claims automatically, or flag everything for the user to decide? Default: downgrade language, flag the rest.
+
 ## Instructions
 
 Extract every checkable claim and verdict each one: verified, soft (direction right, number shaky), or unsupported. Output the table plus required fixes. Unsupported load-bearing claims block publishing.

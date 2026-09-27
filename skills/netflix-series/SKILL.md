@@ -18,6 +18,11 @@ metadata: {version: "0.1.0", corpus_posts: 388, corpus_date: "2026-09"}
 - The topic fits one post. Do not manufacture parts.
 - Standalone announcements. Those ship whole.
 
+## Ask first
+
+- How many parts: your call or mine? (Default: propose the split, confirm.)
+- Does Part 1 exist already? If yes, link it; continuations recap it.
+
 ## Instructions
 
 Mined from 11 Part-N posts in the corpus (3% of titles carry Part markers):
