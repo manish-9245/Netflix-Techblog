@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stories: Write Like Netflix</title>
+<meta name="description" content="Engineering stories written by AI skills trained on 800+ Netflix TechBlog posts." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { boska: ['Boska','Georgia','serif'], satoshi: ['Satoshi','system-ui','sans-serif'] },
+  colors: { paper: '#F4F3EF', ink: '#141412', verdict: '#E50914', folio: '#6B6B66', hairline: '#E2DFD6', stock: '#FFFFFF' }
+} } }
+</script>
+<style>
+  body { font-family: 'Satoshi', system-ui, sans-serif; background: #F4F3EF; color: #141412; }
+  .display { font-family: 'Boska', Georgia, serif; }
+  .blog-body { max-width: 44rem; }
+  .blog-body p { margin-bottom: 1.2rem; line-height: 1.8; color: #2b2b28; font-size: 1.06rem; }
+  .blog-body > p:first-of-type::first-letter { font-family: 'Boska', Georgia, serif; font-weight: 800; font-size: 3.4em; float: left; line-height: .9; padding-right: .12em; color: #E50914; }
+  .blog-body h3 { font-family: 'Boska', Georgia, serif; font-weight: 800; font-size: 1.6rem; margin: 2.4rem 0 .9rem; }
+  .blog-body img { border-radius: 1rem; border: 1px solid #E2DFD6; }
+  ::selection { background: #E50914; color: #fff; }
+  a:focus-visible { outline: 3px solid #E50914; outline-offset: 2px; }
+</style>
+</head>
+<body class="antialiased">
+<main class="overflow-x-hidden w-full max-w-full">
+  <header class="bg-ink text-paper">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between text-sm font-bold">
+      <span class="font-mono text-xs tracking-wide text-paper/70">THE READING ROOM</span>
+      <a href="index.html" class="display font-extrabold text-xl tracking-tight text-paper">Write Like Netflix</a>
+      <a href="https://github.com/manish-9245/Netflix-Techblog" class="bg-verdict text-white text-sm font-bold px-5 py-2 rounded hover:bg-red-700 transition-colors">Install free</a>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-6 pt-14 pb-10">
+    <p class="font-mono text-xs tracking-widest text-folio font-bold">THREE STORIES, WRITTEN BY THE SUITE</p>
+    <h1 class="display font-extrabold tracking-tight leading-[1.03]" style="font-size:clamp(2.6rem,5.5vw,4.6rem)">Fresh off the press.</h1>
+    <div class="mt-6 h-1 bg-verdict w-full origin-left"></div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="blogcards"></div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 pb-28">
+    <article id="blogreader" class="hidden bg-stock border border-hairline rounded-2xl p-8 md:p-14">
+      <a href="blogs.html" class="mb-8 inline-flex items-center gap-2 text-sm font-bold text-folio hover:text-verdict transition"><i class="ph ph-arrow-left"></i> All stories</a>
+      <div id="blogcontent" class="blog-body"></div>
+      <div class="mt-10 pt-6 border-t-2 border-ink flex items-center justify-end">
+        <a href="https://github.com/manish-9245/Netflix-Techblog" class="font-bold text-verdict hover:underline">Get the skills</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="bg-ink text-paper">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-medium text-paper/60">
+      <span class="display font-extrabold text-paper text-lg">Write Like Netflix</span>
+      <div class="flex gap-6 font-bold"><a href="index.html" class="hover:text-white">Home</a><a href="blogs.html" class="hover:text-white">Stories</a><a href="https://github.com/manish-9245/Netflix-Techblog" class="hover:text-white">GitHub</a></div>
+    </div>
+  </footer>
+</main>
+<script src="blogs-data.js"></script>
+<script>
+const bc = document.getElementById("blogcards");
+bc.innerHTML = BLOGS.map(b =>
+  "<a href='#" + b.id + "' class='group bg-stock border border-hairline rounded-2xl overflow-hidden hover:border-verdict transition-colors'>" +
+  "<div class='overflow-hidden'><img src='" + b.img + "' alt='' loading='lazy' class='w-full h-52 object-cover group-hover:scale-105 transition-transform duration-700 ease-out'/></div>" +
+  "<div class='p-6'><p class='font-mono text-xs font-bold text-verdict uppercase tracking-widest'>" + b.tag + " · " + b.hook + " hook</p>" +
+  "<h3 class='display mt-2 text-xl font-extrabold leading-snug'>" + b.title + "</h3></div></a>"
+).join("");
+const reader = document.getElementById("blogreader");
+const content = document.getElementById("blogcontent");
+function route() {
+  const id = (location.hash || "").replace("#", "");
+  const b = BLOGS.find(x => x.id === id);
+  if (!b) { reader.classList.add("hidden"); return; }
+  content.innerHTML = "<p class='font-mono text-xs font-bold text-verdict uppercase tracking-widest mb-3'>" + b.tag + "</p>" +
+    "<h2 class='display text-3xl md:text-5xl font-extrabold mb-8'>" + b.title + "</h2>" +
+    "<img src='" + b.img + "' alt='' class='mb-10 w-full object-cover'/>" + b.body.join("");
+  reader.classList.remove("hidden");
+  reader.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>

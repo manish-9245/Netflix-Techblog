@@ -52,6 +52,12 @@ No generic writing advice.
 
 ## Use
 
+Skills directory (any agent):
+
+```bash
+npx skills add manish-9245/Netflix-Techblog
+```
+
 Claude Code (one command):
 
 ```bash

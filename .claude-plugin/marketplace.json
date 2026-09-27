@@ -1,25 +1,38 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.json",
-  "name": "write-like-netflix",
-  "description": "AI skills that teach assistants to write engineering blogs like Netflix, trained on 800+ Netflix TechBlog posts.",
-  "version": "0.1.0",
-  "author": {
+  "name": "manish-9245-skills",
+  "owner": {
     "name": "manish-9245",
     "url": "https://github.com/manish-9245"
   },
-  "homepage": "https://github.com/manish-9245/Netflix-Techblog",
-  "repository": "https://github.com/manish-9245/Netflix-Techblog",
-  "license": "MIT",
+  "metadata": {
+    "description": "Write Like Netflix: 13 AI skills that teach assistants to write engineering blogs like Netflix, trained on 800+ Netflix TechBlog posts.",
+    "version": "0.1.0"
+  },
   "plugins": [
     {
       "name": "write-like-netflix",
       "description": "13 skills covering topics, titles, research, drafting, visuals, review, and fact-checking in the Netflix TechBlog style.",
       "version": "0.1.0",
-      "author": {
-        "name": "manish-9245"
-      },
       "license": "MIT",
-      "skills": "./skills"
+      "category": "productivity",
+      "tags": ["agent-skills"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/netflix-blog",
+        "./skills/netflix-topics",
+        "./skills/netflix-titles",
+        "./skills/netflix-series",
+        "./skills/netflix-research",
+        "./skills/netflix-interview",
+        "./skills/netflix-data-story",
+        "./skills/netflix-code",
+        "./skills/netflix-hook",
+        "./skills/netflix-write",
+        "./skills/netflix-visuals",
+        "./skills/netflix-review",
+        "./skills/netflix-factcheck"
+      ]
     }
   ]
 }
