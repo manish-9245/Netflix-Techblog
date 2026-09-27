@@ -1,11 +1,33 @@
-# Write Like Netflix
+<p align="center">
+  <img src="assets/netflix-logo.svg" alt="Netflix" width="280" />
+</p>
 
-A skill suite that teaches AI assistants to write engineering blogs the way
-Netflix does — trained on the complete Netflix TechBlog archive
-(**800+ posts, 2017–2026**), each studied as markdown with figures,
-captions, and metadata.
+<h1 align="center">Write Like Netflix</h1>
 
-## Features
+<p align="center">
+  <strong>AI skills that teach assistants to write engineering blogs the way Netflix does.</strong><br/>
+  Trained on the complete Netflix TechBlog archive — 800+ posts (2017–2026).
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/posts-800%2B-E50914" alt="800+ posts" />
+  <img src="https://img.shields.io/badge/skills-13-black" alt="13 skills" />
+  <img src="https://img.shields.io/badge/rules-quantified-black" alt="quantified rules" />
+  <img src="https://img.shields.io/badge/license-MIT-black" alt="MIT" />
+</p>
+
+---
+
+Netflix engineering blogs are famous for a reason: real systems at real scale,
+numbers over adjectives, architecture diagrams where others use paragraphs.
+**Write Like Netflix** distills that style into AI skills — Claude Code,
+OpenCode, and any agent that loads skills — so anyone can produce
+technical writing with the same density and rigor.
+
+Every rule is quantified. Every technique traces to real Netflix posts.
+No generic writing advice.
+
+## ✨ Features
 
 | Skill | What it does |
 |---|---|
@@ -23,27 +45,22 @@ captions, and metadata.
 | `netflix-factcheck` | Verifies every claim against its source |
 | `netflix-blog` | Router — picks the right skills in the right order |
 
-Every rule is quantified, every technique traces to real posts.
-No generic writing advice.
+## 📊 The corpus behind it
 
-## Status
+- **800+** Netflix TechBlog posts, 2017–2026
+- Full text as markdown, with **figures, captions, and metadata**
+- Powers quantitative style profiles: structure, voice, titles, topics, visuals
 
-- [x] Training corpus (800+ posts archived as markdown + figures)
-- [ ] Corpus profiler → quantitative style profiles
-- [ ] Skill suite (`skills/`)
-- [ ] Reviewer rubric + annotated exemplar set
-
-## Use
-
-Compatible with any agent that loads skills
-([Claude Code](https://docs.anthropic.com/en/docs/claude-code),
-[OpenCode](https://opencode.ai/docs), etc.):
+## 🚀 Use
 
 ```bash
 git clone https://github.com/manish-9245/Netflix-Techblog.git
 # point your agent at the skills/ directory
 ```
 
-## License
+Works with [Claude Code](https://docs.anthropic.com/en/docs/claude-code),
+[OpenCode](https://opencode.ai/docs), and any skill-compatible AI assistant.
+
+## 📜 License
 
 Skills and code are MIT. Post content studied belongs to Netflix.
